@@ -14,15 +14,11 @@
     .pusher .container {
       padding: 40px 0;
     }
-    .sticky {
-      position: absolute;
-      bottom: 0;
-    }
   </style>
   <!-- 自定义脚本 -->
   <script type="text/javascript">
     $(document).ready(function() {
-      $('.ui.accordion').accordion();
+      $('.ui.dropdown').dropdown();
     });
   </script>
 </head>
@@ -30,12 +26,7 @@
 
 <div class="ui fixed teal inverted main large menu padded">
   <div class="container">
-    <div class="container">
-      <a class="luanch item"><i class="content icon"></i>微学派</a>
-      <div class="right menu">
-        <a class="item"><i class="chevron left icon"></i></a>
-      </div>
-    </div>
+    <a class="luanch item"><i class="content icon"></i>微学派</a>
   </div>
 </div>
 
@@ -46,24 +37,39 @@
 
 
         <div class="ui teal inverted basic segment">
-          <div class="ui two column centered grid">
-            <div class="column"></div>
-            <div class="column centered">
+          <div class="ui grid">
+            <div class="sixteen wide column"></div>
+            <!-- 两个头像，右对齐 -->
+            <div class="four wide column"></div>
+            <!-- 就绪，或者发起者的头像 -->
+            <div class="eight wide column">
               <img class="ui circular centered image" data-src="holder.js/300x300/size:30/auto/text:就绪!">
             </div>
-            <div class="column"></div>
+            <!-- 两个头像，左对齐 -->
+            <div class="four wide column"></div>
+            <div class="sixteen wide column"></div>
           </div>
         </div>
 
         <div class="ui divided selection very relaxed list">
           <a class="item">
-            <div class="right floated ui tag label">自我练习</div>
+            <div class="right floated ui tag label">随机挑战</div>
             <div class="large ui teal horizontal label">模 式</div>
           </a>
           <a class="item">
-            <div class="right floated ui tag label">人教版</div>
-            <div class="right floated ui tag label">小一(上)</div>
-            <div class="right floated ui tag label">数学</div>
+            <div class="right floated">
+              <img class="ui avatar image" src="/image/avatar/small/1.jpg">
+              <img class="ui avatar image" src="/image/avatar/small/2.jpg">
+              <img class="ui avatar image" src="/image/avatar/small/3.jpg">
+              <img class="ui avatar image" src="/image/avatar/small/4.jpg">
+              <img class="ui avatar image" src="/image/avatar/small/5.jpg">
+            </div>
+            <div class="large ui teal horizontal label">选手</div>
+          </a>
+          <a class="item">
+            <div class="right floated ui tag label">天体物理学</div>
+            <div class="right floated ui tag label">天文</div>
+            <div class="right floated ui tag label">百科</div>
             <div class="large ui teal horizontal label">科 目</div>
           </a>
           <a class="item">
@@ -71,15 +77,8 @@
             <div class="right floated"><div class="ui tag label">无</div>&nbsp;&nbsp;</div>
             <div class="large ui teal horizontal label">聚 焦</div>
           </a>
-          <!-- 根据任务类型显示，练习：用户自己，随机：5个选手，PK：2个选手 -->
           <a class="item">
-            <div class="right floated">
-              <img class="ui avatar image" src="/image/avatar/small/1.jpg">
-            </div>
-            <div class="large ui teal horizontal label">选 手</div>
-          </a>
-          <a class="item">
-            <div class="right floated">2015-04-05 18:03</div>
+            <div class="right floated">2015-04-05 12:31</div>
             <div class="large ui teal horizontal label">创 建</div>
           </a>
         </div>
