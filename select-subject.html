@@ -15,20 +15,16 @@
       padding-top: 40px;
     }
     .ui.accordion .title {
-      line-height: 3em;
+      line-height: 4em;
     }
-    h2.hearder {
-      line-height: 3em;
-      height: 3em;
-      background-color: #ffff00;
-      text-align: center;
-      vertical-align: middle;
+    .cards .card {
+      overflow: hidden;
     }
   </style>
   <!-- 自定义脚本 -->
   <script type="text/javascript">
     $(document).ready(function() {
-      $('.ui.accordion').accordion();
+      $('.ui.accordion').accordion('open', 0);
     });
   </script>
 </head>
@@ -45,54 +41,205 @@
     <div class="header segment">
       <div class="container">
         <div class="ui styled fluid accordion">
-          <!-- 百科 -->
-          <div class="title"><i class="dropdown icon"></i>百科</div>
+          <!-- 热门 -->
+          <div class="title">
+            <div class="ui grid">
+                <div class="ten wide column"><i class="dropdown icon"></i>热门</div>
+                <div class="six wide column right aligned">2/8</div>
+            </div>
+          </div>
           <div class="content">
 
             <div class="ui four cards">
               <div class="card">
                 <div class="image">
+                  <div class="ui yellow corner label"><i class="checkmark circle icon"></i></div>
+                  <img src="holder.js/100x100/size:14/auto/text:历史">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:高考">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:公务员">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <div class="ui yellow corner label"><i class="checkmark circle icon"></i></div>
+                  <img src="holder.js/100x100/size:14/auto/text:烹饪">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <div class="ui yellow corner label"><i class="checkmark circle icon"></i></div>
+                  <img src="holder.js/100x100/size:14/auto/text:会计师">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:天文">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
                   <img src="holder.js/100x100/size:14/auto/text:数学">
                 </div>
               </div>
               <div class="card">
                 <div class="image">
-                  <img src="holder.js/100x100/size:14/auto/text:天体物理">
-                </div>
-              </div>
-              <div class="card">
-                <div class="image">
-                  <img src="holder.js/100x100/size:14/auto/text:数学">
-                </div>
-              </div>
-              <div class="card">
-                <div class="image">
-                  <img src="holder.js/100x100/size:14/auto/text:数学">
-                </div>
-              </div>
-              <div class="card">
-                <div class="image">
-                  <img src="holder.js/100x100/size:14/auto/text:数学">
-                </div>
-              </div>
-              <div class="card">
-                <div class="image">
-                  <img src="holder.js/100x100/size:14/auto/text:数学">
+                  <img src="holder.js/100x100/size:14/auto/text:中考">
                 </div>
               </div>
             </div>
+
+          </div>
+
+          <!-- 百科 -->
+          <div class="title">
+            <div class="ui grid">
+                <div class="twelve wide column"><i class="dropdown icon"></i>百科</div>
+                <div class="four wide column right aligned">0/12</div>
+            </div>
+          </div>
+          <div class="content">
+
+            <div class="ui four cards">
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:天文">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:地理">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:哲学">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:历史">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:医学">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:艺术">
+                </div>
+              </div>
+            </div>
+
           </div>
           <!-- 小学 -->
-          <div class="title"><i class="dropdown icon"></i>小学</div>
+          <div class="title">
+            <div class="ui grid">
+                <div class="twelve wide column"><i class="dropdown icon"></i>小学</div>
+                <div class="four wide column right aligned">0/7</div>
+            </div>
+          </div>
           <div class="content">
+
+            <div class="ui four cards">
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:小一(上)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:小一(下)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:小二(上)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:小二(下)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:小三(上)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:小三(下)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:小升初">
+                </div>
+              </div>
+            </div>
 
           </div>
           <!-- 初中 -->
-          <div class="title"><i class="dropdown icon"></i>初中</div>
+          <div class="title">
+            <div class="ui grid">
+              <div class="twelve wide column"><i class="dropdown icon"></i>初中</div>
+              <div class="four wide column right aligned">0/4</div>
+            </div>
+          </div>
           <div class="content">
 
+            <div class="ui four cards">
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:初一(上)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:初一(下)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:初二(上)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:初二(下)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:初三(上)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:初三(下)">
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="holder.js/100x100/size:14/auto/text:中考">
+                </div>
+              </div>
+            </div>
+
           </div>
+
         </div>
+
       </div>
     </div>
   </div>
